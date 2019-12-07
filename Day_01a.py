@@ -1,15 +1,15 @@
 import math
 
 data = open("Day_01_input.txt", "r")
-list = []
-line = data.read().splitlines()
+line_array = []
+lines = data.read().splitlines()
  
-for x in line :
-    list.append(int(x)) 
+for line in lines :
+    line_array.append(int(line)) 
 data.close()  
 
 fuel = 0
-for x in list :
+for x in line_array :
     add = math.floor(x/3)-2
     fuel0=0
     while add >=0 :
