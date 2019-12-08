@@ -3,7 +3,7 @@ import math
 data = open("Day_01_input.txt", "r")
 line_array = []
 lines = data.read().splitlines()
- 
+
 for line in lines :
     line_array.append(int(line)) 
 data.close()  
